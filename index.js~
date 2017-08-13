@@ -20,8 +20,13 @@ function countDown() {
  function refresh() {
  	var msg = confirm("Would you like to go again?");
  	if(msg){
- 		alert("Refresh the page for more taps..");
+ 		//alert("Refresh the page for more taps..");
+ 		count = 20;
+ 		d.style.color = "initial";
+ 		//countDown();
+ 		//var d = document.getElementById('display');
+ 		//d.style.color = "initial";
  	}else{
-     alert("No wahala.."); 	
+     d.getElementById('display').innerHTML = "The End."; 	
  	} 
  }  

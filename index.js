@@ -20,8 +20,13 @@ function countDown() {
  function refresh() {
  	var msg = confirm("Would you like to go again?");
  	if(msg){
- 		alert("Refresh the page for more taps..");
+ 		//alert("Refresh the page for more taps..");
+ 		count = 20;
+ 		document.getElementById('fresh').style.visibility = "hidden";
+ 		var e = document.getElementById('display');
+ 		e.style.color = "black";
+ 		countDown();
  	}else{
-     document.getElementById('display').innerHTML = "The End."; 	
+     d.getElementById('display').innerHTML = "The End."; 	
  	} 
  }  
