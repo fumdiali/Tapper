@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Tapper | Tap away!</title>
+    <meta charset="utf-8"/>
+     <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="index.css" />
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>   
+  </head>
+  <body>
+    <div id="main">
+      <div class="jumbotron">
+      <h1>Welcome to Tapper!</h1>
+      <h3>Are you ready? Tap away!</h3>
+      </div>
+      <button class="btn btn-primary" onclick="countDown();">Tap</button>
+      <div class="well">
+      <h2 id="display"></h2>
+      <button id="fresh" class="btn btn-success" onclick="refresh();">Refresh</button>
+      </div>    
+    </div>  
+  </body>
+  <script src="index.js"></script>
+</html>
